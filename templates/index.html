@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StayFIT App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('{{ url_for("static", filename="image.png") }}');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            position: relative;
+            min-height: 100vh;
+            padding-bottom: 100px; /* Ensure space for buttons */
+        }
+        .container {
+            position: relative;
+            z-index: 1;
+        }
+        .btn-custom {
+            font-size: 24px;
+            padding: 15px 30px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #28a745; /* Green color */
+            text-align: center;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px #000000; /* Add shadow effect */
+        }
+        .bottom-left {
+            position: absolute;
+            /* bottom: 20px; */
+            left: 20px;
+            padding: 20px; /* Add padding */
+        }
+        .bottom-right {
+            position: absolute;
+            /* bottom: 20px; */
+            right: 20px;
+            padding: 20px; /* Add padding */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><span style="font-weight: bold;">StayFIT App</span></h1>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <form action="/run_pushup">
+                    <button type="submit" class="btn btn-primary btn-block btn-custom bottom-left">Pushup Counter</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <form action="/run_squat">
+                    <button type="submit" class="btn btn-success btn-block btn-custom bottom-right">Squat Counter</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
