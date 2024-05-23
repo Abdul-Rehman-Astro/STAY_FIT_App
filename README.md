@@ -8,27 +8,28 @@ At its core, StayFIT App prioritizes real-time body posture detection as the cor
 
 
 
-Key Features
-**1. Real-time Body Posture Detection**
-Advanced Computer Vision Algorithms: StayFIT App utilizes advanced computer vision algorithms to detect and analyze body postures in real-time during workouts.
-Deep Learning Models: The application employs deep learning models, such as OpenPose or PoseNet, to identify key body landmarks and joints with high precision.
-Instant Feedback on Form: By continuously monitoring the user's posture, StayFIT App provides instant feedback on form and alignment, helping users maintain correct technique and minimize the risk of injury.
-Immediate Guidance: Real-time body posture detection ensures that users receive immediate guidance and corrections, fostering a safer and more effective workout experience.
-**2. Automatic Rep Counting**
-Accurate Rep Counting: StayFIT App features automatic repetition counting functionality, which accurately tallies the number of repetitions completed by the user for each exercise.
-Motion Detection Algorithms: Using sophisticated motion detection algorithms, the application tracks specific movements associated with each exercise, such as the lowering and raising phases in a push-up or the squatting and standing phases in a squat.
-Real-time Feedback: By analyzing these detected movements, StayFIT App counts repetitions in real-time, eliminating the need for manual counting and providing users with precise feedback on their workout progress.
-Time and Effort Saving: Automatic rep counting saves users time and effort, allowing them to focus on their form and technique without the distraction of keeping track of repetitions manually.
-**3. User-friendly Interface**
-Interactive and Intuitive Design: StayFIT App boasts an interactive and intuitive interface designed to enhance user experience and accessibility.
-Easy Navigation: The application features clear and concise navigation menus, making it easy for users to browse exercises, select workout routines, and customize settings according to their preferences.
-Guided Workouts: Intuitive controls and visual cues guide users through each step of their workout, ensuring a seamless and hassle-free experience.
-Accessibility for All: StayFIT App prioritizes simplicity and clarity in its interface design, catering to users of all fitness levels and backgrounds.
-**4. Visual Feedback**
-Informative Overlays: StayFIT App provides users with visual cues and feedback to enhance their understanding and execution of exercises.
+## Features
 
-**5. Customizable Workouts**
-Flexibility and Versatility: StayFIT App offers flexibility and versatility in designing customized workout routines tailored to individual preferences and goals.
+- **Real-time Body Posture Detection:** Detects and analyzes body postures to ensure correct form during exercises.
+- **Automatic Rep Counting:** Counts repetitions accurately based on detected movements.
+- **User-friendly Interface:** Interactive and intuitive interface designed for ease of use.
+- **Visual Feedback:** Provides visual cues and feedback to guide users during their workouts.
+- **Customizable Workouts:** Easily adaptable for various exercises and workout routines.
+
+## How It Works
+
+1. **Camera Feed Capture:** The application captures a real-time video feed from the camera.
+2. **Posture Detection:** Utilizing OpenCV, it identifies key body landmarks to determine the user's posture.
+3. **Repetition Counting:** Based on the detected movements and postures, the application counts repetitions and provides real-time feedback.
+4. **Visual Feedback:** Visual cues and indicators guide the user to maintain correct form and complete each repetition effectively.
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.8.10
+- OpenCV
+- Pillow
 
 
 ```python
@@ -54,3 +55,10 @@ while True:
 ![](https://github.com/Abdul-Rehman-Astro/Pushups_by_Abdul/blob/main/Images/Pushup%20counter%202.png)
 
 ![alt text](https://google.github.io/mediapipe/images/mobile/pose_tracking_full_body_landmarks.png)
+
+
+
+![1](https://github.com/Abdul-Rehman-Astro/Stayfit/blob/main/Project%20photos/3.png)
+![2](https://github.com/Abdul-Rehman-Astro/Stayfit/blob/main/Project%20photos/2.png)
+![3](https://github.com/Abdul-Rehman-Astro/Stayfit/blob/main/Project%20photos/4.png)
+![4](https://github.com/Abdul-Rehman-Astro/Stayfit/blob/main/Project%20photos/5.png)
